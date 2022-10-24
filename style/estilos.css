@@ -1,0 +1,277 @@
+*{
+    font-family: Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    background-color: #7a7a7e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 2;
+}
+.flex-nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-nav div {
+    display: flex;
+    margin: 20px;
+}
+
+.items-nav div a {
+    text-align: center;
+    color: antiquewhite;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.items-nav div a:hover { 
+    background-color: #4e4d60;
+}
+
+.logonav {
+    margin-top: 20px;
+}
+
+.fondo-imagen {
+    background-image: url(../recursos/fondobody.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 7.5%;
+    
+}
+.bienvenida {
+    font-size: xxx-large;
+    color: rgb(190, 214, 233);
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 25%;
+    padding-bottom: 20%;
+}
+.bienvenida{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%
+    }
+
+    to {
+    margin-right: 0%;
+    width: 100%;
+    }
+}
+
+.titulo-anuncios {
+    width: 100%;
+    text-align: center;
+    color: #3f4359;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color:aliceblue
+}
+.anuncios { 
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 5%;
+    height: 350px;
+    width: 100%;
+}
+
+.cards {
+    width: 25%;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgb(177, 177, 174);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    min-width: 200px;
+}
+.cards img {
+    padding-top: 18px;
+}
+.anuncios .cards:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0,2);
+}
+.anuncios .cards p {
+    padding: 0.8%;
+    font-size: medium;
+    letter-spacing: 0.5px;
+}
+.anuncios .cards a {
+    text-decoration: none;
+    color: #4e4d60;
+    letter-spacing: 0.5px;
+}
+
+/* colores de fondo no definitivos, solo
+con el fin de marcar bien el area de cada caja*/
+.seccion-mensajes {
+    display: flex;
+    background-color: #c9ada7;
+    padding-bottom: 15%;
+    padding-top: 1%;
+    justify-content: center;
+    
+}
+.titulo-mensajes {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.main-nosotros {
+    background-color: aliceblue;
+}
+.section-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15%;
+}
+
+.contenido-historia {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    
+}
+
+.contenido-historia h2 {
+    padding: 15%;
+    box-sizing: border-box;
+}
+
+.fotos-historia {
+    margin: 40px;
+    padding: 10%;
+    height: 150px;
+}
+
+.section-vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 15%;
+}
+
+.contenido-vision {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.contenido-vision h2 {
+    padding: 15%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 20%;
+
+}
+
+.h3-container {
+    padding-top: 10%;
+}
+
+.img-kids {
+    z-index: 1;
+}
+
+.cont-misiones{
+    padding-bottom: 10%;
+}
+
+.section-transmi {
+    background-color: beige;
+    padding: 20%;
+    padding-left: 25%;
+}
+
+footer {
+    background-color: #3f4359;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.formulario {
+    width: 20%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    min-width: 220px;
+}
+
+form, input, textarea {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color:#3f4359;
+    border: solid rgb(181, 185, 226) 1px;
+}
+
+#button {
+    width: 30%;
+    color: #ae5541;
+}
+#button:hover {
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.info-footer {
+    width: 50%;
+}
+.mapa {
+    padding-bottom: 3%;
+}
+.col-sm-5{
+    padding-top: 5%;
+    text-align: end;
+}
+
+.jrfcoder {
+    text-align: center;
+    padding-top: 10px;
+}
+
+body {
+    width: 100%;
+    padding: 0%;
+    margin-top: 5%; 
+    background-color: aliceblue;
+}
+
